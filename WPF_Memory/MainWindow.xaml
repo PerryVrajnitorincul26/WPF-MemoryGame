@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_Memory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Memory"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0" LastChildFill="False">
+            <DockPanel DockPanel.Dock="Left" Margin="0,0,0,0" LastChildFill="False">
+                <Label DockPanel.Dock="Top" Content="Select User:"/>
+                <ComboBox x:Name="UserSelect" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="0,0,0,10" MinWidth="256" Text="Select User"/>
+                <DockPanel DockPanel.Dock="Top">
+                    <Label DockPanel.Dock="Left" Content="Not registered?"/>
+                    <Button x:Name="SignupUser" DockPanel.Dock="Left" HorizontalAlignment="Right" Click="SignupUserClicked" Content="Signup"/>
+                    <Button x:Name="RemoveUser" DockPanel.Dock="Right" HorizontalAlignment="Right" Click="RemoveUserClicked" Content="Delete User"/>
+                </DockPanel>
+                <Button x:Name="Quit" DockPanel.Dock="Bottom" Click="QuitAppClicked" Content="Quit" Margin="0,10,0,0"/>
+                <Button x:Name="StartGame" DockPanel.Dock="Bottom" Click="StartGameClicked" Content="Play"/>
+            </DockPanel>
+            <Image x:Name="UserProfileImage" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="10" Height="128" Width="128" Source="pack://application:,,,/Resources/DefaultUserProfilePicture.png"/>
+        </DockPanel>
+    </Grid>
+</Window>
