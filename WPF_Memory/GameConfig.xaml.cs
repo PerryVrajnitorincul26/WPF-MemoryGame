@@ -23,5 +23,10 @@ namespace WPF_Memory
         {
             InitializeComponent();
         }
+
+        private void GameConfig_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -10,7 +10,7 @@
         <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0" LastChildFill="False">
             <DockPanel DockPanel.Dock="Left" Margin="0,0,0,0" LastChildFill="False">
                 <Label DockPanel.Dock="Top" Content="Select User:"/>
-                <ComboBox x:Name="UserSelect" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="0,0,0,10" MinWidth="256" Text="Select User"/>
+                <ComboBox x:Name="UserSelect" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="0,0,0,10" MinWidth="256" Text="Select User" Loaded="UserSelectLoaded"/>
                 <DockPanel DockPanel.Dock="Top">
                     <Label DockPanel.Dock="Left" Content="Not registered?"/>
                     <Button x:Name="SignupUser" DockPanel.Dock="Left" HorizontalAlignment="Right" Click="SignupUserClicked" Content="Signup"/>

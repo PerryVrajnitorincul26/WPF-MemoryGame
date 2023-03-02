@@ -25,6 +25,7 @@ namespace WPF_Memory
             InitializeComponent();
         }
 
+
         private void RemoveUserClicked(object sender, RoutedEventArgs e)
         {
 
@@ -44,6 +45,11 @@ namespace WPF_Memory
         private void QuitAppClicked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void UserSelectLoaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
