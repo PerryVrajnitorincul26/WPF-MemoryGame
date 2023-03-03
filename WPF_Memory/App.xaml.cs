@@ -13,5 +13,10 @@ namespace WPF_Memory
     /// </summary>
     public partial class App : Application
     {
+        private void InitApp(object sender, StartupEventArgs e)
+        {
+            MainWindow UserMenu = new MainWindow();
+            UserMenu.Show();
+        }
     }
 }

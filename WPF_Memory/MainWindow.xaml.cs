@@ -18,6 +18,18 @@ namespace WPF_Memory
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    public class Statistics
+    {
+        
+    }
+    public class User
+    {
+        String user_name;
+        String user_profile;
+        Statistics user_stats;
+        
+        
+    }
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -50,6 +62,11 @@ namespace WPF_Memory
         private void UserSelectLoaded(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void UserSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
