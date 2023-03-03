@@ -20,16 +20,33 @@ namespace WPF_Memory
     /// </summary>
     public class Statistics
     {
-        
+        int PlayedGames;
+        int WonGames;
+        float WinRate; 
+        public Statistics()
+        {
+            PlayedGames = 0;WonGames = 0;WinRate = 0.0f;
+        }
     }
     public class User
     {
-        String user_name;
-        String user_profile;
-        Statistics user_stats;
-        
-        
+        public String Username { get; set; }
+        public ImageSource ProfilePicture { get; set; }
+        public Statistics UserStats;
+        public User()
+        {
+            Username = "default";
+            UserStats = new Statistics();
+            ProfilePicture = new BitmapImage(new Uri("C:\\Users\\mato274179\\source\\repos\\WPF_Memory\\WPF_Memory\\Resources\\DefaultUserProfilePicture.png"));
+        }
+        public User(String ChosenName, ImageSource ChosenImage)
+        {
+            Username = ChosenName;
+            UserStats = new Statistics();
+            ProfilePicture = ChosenImage;
+        }
     }
+    
     public partial class MainWindow : Window
     {
         public MainWindow()

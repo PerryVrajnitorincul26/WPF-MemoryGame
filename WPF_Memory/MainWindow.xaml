@@ -8,8 +8,14 @@
         Title="MainWindow" Height="600" Width="800" SizeToContent="WidthAndHeight">
     <Grid>
         <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" LastChildFill="False">
-            <DockPanel.Resources>
-            </DockPanel.Resources>
+            <DockPanel.DataContext>
+                <local:User/>
+            </DockPanel.DataContext>
+            <WrapPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+                <TextBlock>Hello&#160; </TextBlock>
+                <TextBlock Text="{Binding Username}"></TextBlock>
+                <TextBlock>!</TextBlock>
+            </WrapPanel>
             <DockPanel DockPanel.Dock="Left" Margin="0,0,0,0" LastChildFill="False">
                 <Label DockPanel.Dock="Top" Content="Select User:"/>
                 <ComboBox x:Name="UserSelect" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="0,0,0,10" MinWidth="256" Text="Select User" Loaded="UserSelectLoaded" SelectionChanged="UserSelect_SelectionChanged">
