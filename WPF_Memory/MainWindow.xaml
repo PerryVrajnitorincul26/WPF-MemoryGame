@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Memory"
         mc:Ignorable="d"
+        x:Name="mWindow"
+        Closing="MWindow_Closing"
         Title="MainWindow" Height="600" Width="800" SizeToContent="WidthAndHeight">
+    <Window.DataContext>
+        <local:UserSelect/>
+    </Window.DataContext>
     <Grid>
-        <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" LastChildFill="False">
-            <DockPanel.DataContext>
-                <local:User/>
-            </DockPanel.DataContext>
-            <WrapPanel DockPanel.Dock="Top" Margin="0,0,0,10">
-                <TextBlock>Hello&#160; </TextBlock>
-                <TextBlock Text="{Binding Username}"></TextBlock>
-                <TextBlock>!</TextBlock>
-            </WrapPanel>
+        <DockPanel x:Name="UserDock" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" LastChildFill="False">
             <DockPanel DockPanel.Dock="Left" Margin="0,0,0,0" LastChildFill="False">
-                <Label DockPanel.Dock="Top" Content="Select User:"/>
-                <ComboBox x:Name="UserSelect" DockPanel.Dock="Top" VerticalAlignment="Top" Margin="0,0,0,10" MinWidth="256" Text="Select User" Loaded="UserSelectLoaded" SelectionChanged="UserSelect_SelectionChanged">
-                    <ComboBoxItem></ComboBoxItem> 
+                <Label DockPanel.Dock="Top" Content="Hello:"/>
+                <ComboBox x:Name="UserDropDown" DockPanel.Dock="Top" SelectedIndex="0" VerticalAlignment="Top" IsEditable="False" Margin="0,0,0,10" MinWidth="256" Text="{Binding Path=Username}" Loaded="UserSelectLoaded" SelectionChanged="UserSelect_SelectionChanged" ItemsSource="{Binding KnownUsers}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Username}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
                 </ComboBox>
                 <DockPanel DockPanel.Dock="Top">
-                    <Label DockPanel.Dock="Left" Content="Not registered?"/>
                     <Button x:Name="SignupUser" DockPanel.Dock="Left" HorizontalAlignment="Right" Click="SignupUserClicked" Content="Signup"/>
                     <Button x:Name="RemoveUser" DockPanel.Dock="Right" HorizontalAlignment="Right" Click="RemoveUserClicked" Content="Delete User"/>
                 </DockPanel>
@@ -30,7 +30,7 @@
                 <Button x:Name="StartGame" DockPanel.Dock="Bottom" Click="StartGameClicked" Content="Play"/>
             </DockPanel>
             <StackPanel>
-                <Image x:Name="UserProfileImage" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="10" Height="128" Width="128" Source="pack://application:,,,/Resources/DefaultUserProfilePicture.png"/>
+                <Image x:Name="UserProfileImage" DockPanel.Dock="Right" VerticalAlignment="Center" Margin="10" Height="128" Width="128" Source="{Binding Path=CurrentUser.ProfilePicPath}"/>
                 <Grid>
                     <Button HorizontalAlignment="Left" Margin="10,0,0,0">prev</Button>    
                     <Button HorizontalAlignment="Right" Margin="0,0,10,0">next</Button>    

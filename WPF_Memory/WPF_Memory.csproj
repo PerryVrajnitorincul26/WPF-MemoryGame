@@ -58,6 +58,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Game.xaml.cs">
+      <DependentUpon>Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameLogic.cs" />
+    <Compile Include="SignUp.xaml.cs">
+      <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Page Include="Game.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GameConfig.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -70,6 +82,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SerializationHelper.cs" />
     <Compile Include="GameConfig.xaml.cs">
       <DependentUpon>GameConfig.xaml</DependentUpon>
     </Compile>
@@ -77,6 +90,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SignUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -105,7 +122,5388 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DefaultUserProfilePicture.png" />
+    <None Include="Resources\DefaultUserProfilePicture.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\0.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\11.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\12.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\13.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\14.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\15.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\16.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\17.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\18.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\19.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\20.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\21.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\22.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\23.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\24.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\25.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\26.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\27.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\28.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\30.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\31.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\32.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\33.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\34.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\35.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\36.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\37.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\38.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\39.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\40.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\41.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\42.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\43.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\44.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\45.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\46.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\47.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\48.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\49.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\50.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\51.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\52.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\53.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\54.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\55.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\56.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\57.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\58.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\59.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\60.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\61.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\62.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\63.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\64.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\65.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\66.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\67.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\68.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\69.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\70.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\71.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\72.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\73.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\74.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\75.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\76.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\77.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\78.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\79.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\80.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\81.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\82.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\83.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\84.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\85.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\86.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\87.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\88.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\89.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\90.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\91.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\92.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\93.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\94.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\95.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\96.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\97.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\98.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\99.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\100.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\101.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\102.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\103.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\104.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\105.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\106.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\107.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\108.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\109.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\110.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\111.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\112.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\113.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\114.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\115.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\116.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\117.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\118.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\119.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\120.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\121.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\122.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\123.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\124.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\125.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\126.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\127.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\128.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\129.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\130.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\131.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\132.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\133.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\134.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\135.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\136.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\137.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\138.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\139.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\140.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\141.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\142.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\143.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\144.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\145.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\146.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\147.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\148.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\149.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\150.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\151.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\152.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\153.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\154.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\155.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\156.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\157.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\158.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\159.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\160.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\161.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\162.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\163.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\164.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\165.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\166.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\167.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\168.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\169.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\170.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\171.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\172.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\173.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\174.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\175.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\176.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\177.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\178.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\179.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\180.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\181.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\182.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\183.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\184.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\185.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\186.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\187.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\188.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\189.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\190.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\191.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\192.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\193.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\194.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\195.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\196.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\197.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\198.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\199.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\200.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\201.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\202.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\203.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\204.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\205.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\206.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\207.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\208.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\209.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\210.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\211.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\212.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\213.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\214.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\215.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\216.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\217.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\218.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\219.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\220.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\221.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\222.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\223.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\224.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\225.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\226.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\227.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\228.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\229.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\230.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\231.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\232.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\233.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\234.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\235.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\236.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\237.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\238.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\239.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\240.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\241.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\242.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\243.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\244.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\245.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\246.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\247.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\248.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\249.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\250.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\251.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\252.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\253.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\254.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\255.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\256.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\257.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\258.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\259.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\260.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\261.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\262.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\263.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\264.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\265.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\266.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\267.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\268.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\269.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\270.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\271.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\272.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\273.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\274.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\275.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\276.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\277.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\278.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\279.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\280.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\281.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\282.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\283.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\284.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\285.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\286.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\287.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\288.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\289.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\290.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\291.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\292.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\293.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\294.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\295.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\296.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\297.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\298.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\299.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\300.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\301.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\302.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\303.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\304.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\305.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\306.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\307.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\308.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\309.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\310.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\311.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\312.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\313.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\314.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\315.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\316.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\317.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\318.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\319.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\320.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\321.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\322.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\323.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\324.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\325.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\326.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\327.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\328.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\329.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\330.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\331.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\332.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\333.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\334.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\335.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\336.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\337.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\338.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\339.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\340.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\341.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\342.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\343.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\344.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\345.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\346.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\347.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\348.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\349.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\350.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\351.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\352.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\353.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\354.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\355.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\356.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\357.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\358.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\359.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\360.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\361.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\362.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\363.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\364.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\365.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\366.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\367.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\368.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\369.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\370.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\371.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\372.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\373.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\374.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\375.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\376.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\377.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\378.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\379.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\380.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\381.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\382.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\383.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\384.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\385.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\386.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\387.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\388.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\389.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\390.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\391.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\392.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\393.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\394.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\395.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\396.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\397.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\398.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\399.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\400.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\401.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\402.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\403.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\404.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\405.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\406.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\407.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\408.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\409.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\410.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\411.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\412.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\413.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\414.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\415.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\416.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\417.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\418.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\419.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\420.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\421.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\422.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\423.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\424.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\425.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\426.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\427.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\428.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\429.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\430.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\431.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\432.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\433.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\434.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\435.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\436.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\437.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\438.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\439.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\440.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\441.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\442.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\443.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\444.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\445.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\446.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\447.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\448.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\449.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\450.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\451.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\452.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\453.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\454.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\455.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\456.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\457.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\458.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\459.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\460.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\461.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\462.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\463.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\464.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\465.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\466.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\467.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\468.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\469.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\470.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\471.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\472.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\473.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\474.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\475.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\476.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\477.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\478.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\479.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\480.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\481.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\482.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\483.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\484.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\485.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\486.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\487.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\488.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\489.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\490.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\491.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\492.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\493.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\494.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\495.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\496.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\497.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\498.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\499.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\500.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\501.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\502.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\503.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\504.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\505.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\506.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\507.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\508.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\509.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\510.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\511.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\512.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\513.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\514.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\515.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\516.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\517.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\518.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\519.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\520.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\521.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\522.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\523.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\524.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\525.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\526.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\527.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\528.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\529.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\530.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\531.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\532.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\533.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\534.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\535.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\536.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\537.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\538.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\539.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\540.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\541.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\542.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\543.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\544.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\545.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\546.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\547.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\548.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\549.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\550.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\551.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\552.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\553.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\554.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\555.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\556.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\557.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\558.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\559.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\560.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\561.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\562.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\563.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\564.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\565.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\566.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\567.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\568.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\569.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\570.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\571.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\572.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\573.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\574.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\575.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\576.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\577.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\578.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\579.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\580.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\581.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\582.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\583.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\584.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\585.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\586.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\587.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\588.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\589.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\590.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\591.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\592.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\593.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\594.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\595.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\596.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\597.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\598.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\599.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\600.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\601.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\602.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\603.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\604.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\605.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\606.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\607.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\608.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\609.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\610.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\611.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\612.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\613.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\614.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\615.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\616.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\617.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\618.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\619.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\620.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\621.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\622.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\623.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\624.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\625.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\626.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\627.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\628.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\629.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\630.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\631.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\632.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\633.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\634.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\635.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\636.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\637.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\638.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\639.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\640.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\641.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\642.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\643.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\644.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\645.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\646.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\647.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\648.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\649.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\650.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\651.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\652.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\653.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\654.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\655.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\656.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\657.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\658.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\659.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\660.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\661.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\662.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\663.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\664.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\665.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\666.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\667.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\668.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\669.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\670.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\671.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\672.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\673.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\674.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\675.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\676.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\677.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\678.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\679.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\680.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\681.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\682.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\683.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\684.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\685.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\686.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\687.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\688.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\689.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\690.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\691.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\692.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\693.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\694.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\695.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\696.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\697.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\698.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\699.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\700.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\701.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\702.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\703.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\704.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\705.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\706.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\707.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\708.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\709.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\710.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\711.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\712.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\713.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\714.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\715.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\716.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\717.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\718.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\719.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\720.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\721.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\722.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\723.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\724.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\725.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\726.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\727.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\728.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\729.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\730.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\731.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\732.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\733.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\734.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarTileSet\9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\57.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\59.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\65.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\67.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\69.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\73.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\75.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\77.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\79.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\83.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\85.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\87.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\89.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\97.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\99.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\103.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\105.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\107.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\109.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\113.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\115.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\117.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\119.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\126.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\127.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\129.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\133.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\135.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\137.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\139.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\147.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\149.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\153.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\155.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\157.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\159.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\163.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\165.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\167.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\169.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\171.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\172.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\173.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\174.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\175.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\177.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\179.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\181.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\183.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\185.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\186.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\187.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\189.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\191.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\193.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\195.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\197.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\199.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\203.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\204.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\205.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\206.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\207.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\208.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\209.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\216.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\218.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\219.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\220.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\223.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\224.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\225.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\226.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\227.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\228.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\229.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\230.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\232.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\233.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\235.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\236.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\238.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\239.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\241.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\242.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\243.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\244.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\245.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\246.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\247.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\248.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\249.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\250.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\252.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\253.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\254.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\255.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\256.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\257.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\258.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\259.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\262.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\263.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\264.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\265.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\266.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\267.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\268.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\269.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\270.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\272.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\273.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\274.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\275.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\276.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\277.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\278.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\279.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\282.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\283.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\284.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\285.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\286.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\287.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\288.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\289.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\290.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\293.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\294.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\296.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\297.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\298.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\299.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\301.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\302.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\303.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\304.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\305.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\306.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\307.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\308.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\309.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\310.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\313.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\314.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\315.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\316.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\317.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\318.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\319.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\320.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\322.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\323.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\324.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\325.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\326.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\327.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\328.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\329.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\330.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\332.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\334.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\335.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\336.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\337.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\338.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\339.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\341.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\342.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\343.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\344.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\345.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\346.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\347.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\348.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\349.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\350.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\351.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\352.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\353.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\354.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\355.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\356.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\357.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\358.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\359.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\360.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\361.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\362.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\363.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\364.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\365.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\366.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\367.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\368.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\369.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\370.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\372.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\373.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\374.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\375.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\376.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\377.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\378.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\379.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\380.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\382.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\383.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\384.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\385.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\386.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\387.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\388.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\389.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\390.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\391.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\392.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\393.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\394.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\395.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\396.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\397.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\398.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\399.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\402.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\403.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\404.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\406.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\407.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\408.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\409.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\410.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\412.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\413.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\414.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\416.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\417.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\418.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\419.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\420.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\422.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\423.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\424.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\425.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\427.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\428.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\429.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\430.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\431.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\433.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\434.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\435.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\436.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\437.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\438.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\443.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\444.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\445.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\446.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\447.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\448.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\449.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\451.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\452.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\453.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\454.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\455.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\456.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\457.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\459.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\460.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\461.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\462.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\463.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\464.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\465.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\466.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\467.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\469.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\470.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\471.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\472.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\473.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\474.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\475.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\476.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\477.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\478.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\479.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\481.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\482.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\483.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\484.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\485.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\486.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\487.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\488.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\489.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\490.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\491.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\492.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\493.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\494.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\495.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\496.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\497.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\498.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\499.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\500.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\501.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\504.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\505.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\506.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\507.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\508.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\509.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\511.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\514.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\515.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\516.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\517.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\518.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\519.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\520.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\521.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\522.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\523.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\524.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\525.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\526.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\527.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\528.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\529.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\530.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\532.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\533.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\534.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\535.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\536.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\537.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\538.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\539.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\540.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\542.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\543.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\544.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\545.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\546.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\547.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\549.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\550.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\552.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\553.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\554.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\557.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\558.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\559.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\560.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\562.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\563.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\566.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TankTileSet\0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

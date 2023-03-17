@@ -11,6 +11,8 @@
 *.userprefs
 
 # Build results
+Resources/
+*.png
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
