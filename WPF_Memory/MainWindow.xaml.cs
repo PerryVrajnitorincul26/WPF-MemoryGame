@@ -53,8 +53,8 @@ namespace WPF_Memory
 
         private void StartGameClicked(object sender, RoutedEventArgs e)
         {
-            var w = new Game();
-            w.Show();
+            var w = new GameConfig();
+            w.ShowDialog();
         }
 
         private void QuitAppClicked(object sender, RoutedEventArgs e)

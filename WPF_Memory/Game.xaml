@@ -6,15 +6,17 @@
       xmlns:local="clr-namespace:WPF_Memory"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
+      Loaded="Window_Loaded"
       Title="Game">
     <Grid>
         <Grid.DataContext>
             <local:GameLogic/>
         </Grid.DataContext>
+        <TextBlock Text="{Binding Procentage}"/>
         <ItemsControl x:Name="GameGridControl" ItemsSource="{Binding Tiles}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <UniformGrid Name="GameGrid" Columns="{Binding Length}" Rows="{Binding Width}"/>
+                    <UniformGrid Name="GameGrid" Margin="0,30,0,0" Columns="{Binding Length}" Rows="{Binding Width}"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>

@@ -7,7 +7,36 @@
         mc:Ignorable="d"
         Title="GameConfig" Height="450" Width="800"
         Loaded="GameConfig_Loaded">
-    <Grid>
-        
-    </Grid>
+    <Window.DataContext>
+        <local:GameConfigContext/>
+    </Window.DataContext>
+    <StackPanel Orientation="Horizontal">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="Length" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Length" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Length}" VerticalAlignment="Center"
+                Width="120" TextChanged="Length_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="Width " HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Width" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding Width}" VerticalAlignment="Center"
+                Width="120" TextChanged="Width_TextChanged"/>
+            </StackPanel>
+            <Button x:Name="Start" HorizontalAlignment="Left" Click="Start_Click">Start game</Button>
+        </StackPanel>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label Content="Save location" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Savegame" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding SaveLocation}" VerticalAlignment="Center"
+                Width="120" TextChanged="Savegame_TextChanged"/>
+            </StackPanel>
+                <Button  x:Name="FilePicker" Content="Select Saved Game" Margin="0,0,0,0" Width="200" Click="FilePicker_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Button x:Name="Load" HorizontalAlignment="Left" Width="200" Click="Load_Click">Load game</Button>
+        </StackPanel>
+        <TextBlock Text="Previously won games:"/>
+        <TextBlock Text="{Binding Won}"/>
+        <StackPanel Margin="10,0,0,0">
+            <TextBlock>User statistics go here</TextBlock>
+        </StackPanel>
+    </StackPanel>
 </Window>

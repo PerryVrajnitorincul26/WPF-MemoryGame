@@ -31,18 +31,6 @@ namespace WPF_Memory
     {
         [XmlAttribute]
         public String Username { get; set; }
-        //public String Username
-        //{
-        //    get=>_username;
-        //    set
-        //    {
-        //        if (value == _username) return;
-        //        _username = value;
-        //        NotifyPropertyChanged("Username");
-        //    }
-        //}
-
-
         [XmlAttribute]
         private String _profilePicPath;
         public String ProfilePicPath { get => _profilePicPath; set { if (_profilePicPath != value) _profilePicPath = value;NotifyPropertyChanged("ProfilePicPath");} }

@@ -84,44 +84,53 @@ namespace WPF_Memory
         }
     }
     [Serializable]
-    class GameLogic
+    class GameLogic : INotifyPropertyChanged
     {
+        [XmlAttribute]
+        private int _length;
+        public int Length { get => _length; set { if (_length != value) _length = value; reorder(); NotifyPropertyChanged("Length"); } }
+        [XmlAttribute]
+        private int _width;
+        public int Width { get => _width; set { if (_width != value) _width = value; reorder(); NotifyPropertyChanged("Width"); } }
         [XmlElement]
-        public int Length { get; }
-        [XmlElement]
-        public int Width { get; }
+        private int _score;
+        public int Score { get => _score; set { if (_score != value) _score = value;NotifyPropertyChanged("Score");Task.Delay(1000).ContinueWith(t=>NotifyPropertyChanged("Procentage")); } }
+        [XmlIgnore]
+        public bool Won { get => (Score == (_length * _width)); }
+        [XmlIgnore]
+        public double Procentage { get => Score / (_length * _width); }
         [XmlArray]
         public ObservableCollection<Tile> Tiles { get; set; }
-        public GameLogic()
+        private void reorder()
         {
-            Length = 6;
-            Width = 6;
-            Tiles = new ObservableCollection<Tile>();
+            Tiles.Clear();
             var preShuffle = new ObservableCollection<Tile>();
             for (int i = 0; i < (Length*Width)/2; i++)
             {
-                var imgPath = new Uri("C:\\Users\\mato274179\\source\\repos\\WPF_Memory\\WPF_Memory\\bin\\Debug\\Resources\\CarTileSet\\" + i.ToString() + ".jpg", UriKind.Absolute);
+                var imgPath = new Uri("C:\\Users\\mato274179\\source\\repos\\WPF_Memory\\WPF_Memory\\Resources\\CarTileSet\\" + i.ToString() + ".jpg", UriKind.Absolute);
                 preShuffle.Add(new Tile(i,imgPath));
                 preShuffle.Add(new Tile(i,imgPath));
             }
-            foreach(var i in preShuffle)
+            foreach(var i in preShuffle.Shuffle())
             {
                 Tiles.Add(i);
             }
-
         }
-        public GameLogic(int l,int w,string pathBase)
+        public GameLogic()
         {
-            Length = l;
-            Width = w;
-            var preShuffle = new ObservableCollection<Tile>();
-            for (int i = 0; i < Length*Width; i++)
+            Tiles = new ObservableCollection<Tile>();
+            Score = 0;
+            Length = 4;
+            Width = 4;
+            reorder();
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            if (PropertyChanged != null)
             {
-                string imgPath = pathBase + i.ToString() + ".jpg";
-                preShuffle.Add(new Tile());
-                preShuffle.Add(new Tile());
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
-            Tiles = (ObservableCollection<Tile>)preShuffle.Shuffle();
         }
     }
 }
