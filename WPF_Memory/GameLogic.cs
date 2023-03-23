@@ -41,7 +41,7 @@ namespace WPF_Memory
     }
 
     [Serializable]
-    class Tile : INotifyPropertyChanged
+    public class Tile : INotifyPropertyChanged
     {
 
         [XmlAttribute]
@@ -84,21 +84,21 @@ namespace WPF_Memory
         }
     }
     [Serializable]
-    class GameLogic : INotifyPropertyChanged
+    public class GameLogic : INotifyPropertyChanged
     {
-        [XmlAttribute]
         private int _length;
-        public int Length { get => _length; set { if (_length != value) _length = value; reorder(); NotifyPropertyChanged("Length"); } }
         [XmlAttribute]
+        public int Length { get => _length; set { if (_length != value) _length = value; reorder(); NotifyPropertyChanged("Length"); } }
         private int _width;
+        [XmlAttribute]
         public int Width { get => _width; set { if (_width != value) _width = value; reorder(); NotifyPropertyChanged("Width"); } }
         [XmlElement]
         private int _score;
-        public int Score { get => _score; set { if (_score != value) _score = value;NotifyPropertyChanged("Score");Task.Delay(1000).ContinueWith(t=>NotifyPropertyChanged("Procentage")); } }
+        public int Score { get => _score; set { if (_score != value) _score = value;NotifyPropertyChanged("Score");NotifyPropertyChanged("Procentage");NotifyPropertyChanged("Won"); } }
         [XmlIgnore]
-        public bool Won { get => (Score == (_length * _width)); }
+        public bool Won { get => (Score+1 >= (_length * _width)); }
         [XmlIgnore]
-        public double Procentage { get => Score / (_length * _width); }
+        public double Procentage { get => Score / ((float)_length * _width); }
         [XmlArray]
         public ObservableCollection<Tile> Tiles { get; set; }
         private void reorder()

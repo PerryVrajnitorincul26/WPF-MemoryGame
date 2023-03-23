@@ -13,17 +13,30 @@ using System.Collections.ObjectModel;
 namespace WPF_Memory
 {
     [Serializable]
-    public class Statistics
+    public class Statistics :INotifyPropertyChanged
     {
-        [XmlAttribute]
-        int PlayedGames { get; set; }
-        [XmlAttribute]
-        int WonGames { get; set; }
         [XmlIgnore]
-        float WinRate;
+        private int _playedGames;
+        [XmlElement]
+        public int PlayedGames { get => _playedGames; set { if (value != _playedGames) _playedGames = value; NotifyPropertyChanged("PlayedGames"); } }
+        [XmlIgnore]
+        private int _wonGames;
+        [XmlElement]
+        public int WonGames { get => _wonGames; set { if (value != _wonGames) _wonGames = value; NotifyPropertyChanged("WonGames"); } }
+        [XmlIgnore]
+        public float WinRate { get { if (PlayedGames != 0) return WonGames / PlayedGames; else return 0; } }
         public Statistics()
         {
-            PlayedGames = 0; WonGames = 0; WinRate = 0.0f;
+            PlayedGames = 0; WonGames = 0;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     [Serializable]
@@ -37,13 +50,14 @@ namespace WPF_Memory
         [XmlIgnore]
         public ImageSource ProfilePicture { get; set; }
         [XmlElement]
-        public Statistics UserStats;
+        public Statistics UserStats { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         public User()
         {
             Username = "Placeholder";
+            UserStats = new Statistics();
             ProfilePicPath = "C:\\Users\\mato274179\\source\\repos\\WPF_Memory\\WPF_Memory\\Resources\\DefaultUserProfilePicture.png";
         }
         public User(bool GenerateDefaultUser)

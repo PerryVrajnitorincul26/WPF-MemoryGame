@@ -20,10 +20,12 @@ namespace WPF_Memory
     /// </summary>
     public partial class GameConfig : Window
     {
+        SerializationHelperGame SrlXml;
         GameLogic CurrentGame = null;
-        public GameConfig()
+        public GameConfig(UserSelect usr)
         {
             InitializeComponent();
+            UserField.DataContext = usr;
         }
 
         private void GameConfig_Loaded(object sender, RoutedEventArgs e)
@@ -42,7 +44,6 @@ namespace WPF_Memory
 
         private void Savegame_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
 
         private void FilePicker_Click(object sender, RoutedEventArgs e)
@@ -52,9 +53,22 @@ namespace WPF_Memory
                 (this.DataContext as GameConfigContext).SaveLocation = new Uri(FileDiag.FileName);
         }
 
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            SrlXml = new SerializationHelperGame(this.DataContext as GameConfigContext);
+            SrlXml.SerializeObject(this.DataContext as GameConfigContext);
+        }
+
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             var temp = this.DataContext as GameConfigContext;
+            var stats = (UserField.DataContext as UserSelect);
             Game gwindow;
             if (CurrentGame == null)
             {
@@ -67,6 +81,7 @@ namespace WPF_Memory
                 gwindow.GameGridControl.DataContext = CurrentGame;
             }
             gwindow.ShowDialog();
+            stats.CurrentUser.UserStats.PlayedGames++;
             if((gwindow.GameGridControl.DataContext as GameLogic).Won)
             {
                 gwindow = new Game(temp.Width,temp.Length);
@@ -76,14 +91,9 @@ namespace WPF_Memory
                 {
                     MessageBox.Show("You've won 3 consecutive games");
                     temp.Won = 0;
-                    ///Modify user statistics
+                    stats.CurrentUser.UserStats.WonGames++;
                 }
             }
-        }
-
-        private void Load_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -12,12 +12,18 @@ using System.Windows.Media.Imaging;
 
 namespace WPF_Memory
 {
-    class GameConfigContext:INotifyPropertyChanged
+    [Serializable]
+    public class GameConfigContext:INotifyPropertyChanged
     {
+        [XmlAttribute]
         public int Length{get;set;}
+        [XmlAttribute]
         public int Width{get;set;}
+        [XmlAttribute]
         public int Won{get;set;}
+        [XmlIgnore]
         private Uri _saveLocation;
+        [XmlIgnore]
         public Uri SaveLocation { get=>_saveLocation; set{ if (value != _saveLocation) _saveLocation = value; NotifyPropertyChanged("SaveLocation"); } }
         public GameConfigContext()
         {

@@ -53,7 +53,7 @@ namespace WPF_Memory
 
         private void StartGameClicked(object sender, RoutedEventArgs e)
         {
-            var w = new GameConfig();
+            var w = new GameConfig(this.DataContext as UserSelect);
             w.ShowDialog();
         }
 

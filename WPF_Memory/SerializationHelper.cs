@@ -24,7 +24,7 @@ namespace WPF_Memory
         UserSelect myUsers;
         public SerializationHelper(UserSelect myUsers)
         {
-            this.myUsers = myUsers; 
+            this.myUsers = myUsers;
         }
         public void SerializeObject(UserSelect entity)
         {
@@ -42,11 +42,37 @@ namespace WPF_Memory
             //din acest motiv repopulez colectia this.users cu elementele colectiei obtinute prin deserializare
             var temp = xmlser.Deserialize(file) as UserSelect;
             myUsers.KnownUsers.Clear();
-            foreach(var i in temp.KnownUsers)
+            foreach (var i in temp.KnownUsers)
             {
                 myUsers.KnownUsers.Add(i);
             }
             myUsers.CurrentUser = temp.CurrentUser;
+            file.Dispose();
+        }
+    }
+    class SerializationHelperGame
+    {
+        GameConfigContext myUsers;
+        public SerializationHelperGame(GameConfigContext myUsers)
+        {
+            this.myUsers = myUsers;
+        }
+        public void SerializeObject(GameConfigContext entity)
+        {
+            XmlSerializer xmlser = new XmlSerializer(typeof(GameConfigContext));
+            FileStream fileStr = new FileStream("game.xml", FileMode.Create);
+            xmlser.Serialize(fileStr, entity);
+            fileStr.Dispose();
+        }
+        public void DeserializeObject()
+        {
+            XmlSerializer xmlser = new XmlSerializer(typeof(GameConfigContext));
+            FileStream file = new FileStream("game.xml", FileMode.Open);
+            //se pierde referinta la colectie prin reinitializarea ei cu un alt obiect
+            //this.users = (xmlser.Deserialize(file) as UserSelect).Cars;
+            //din acest motiv repopulez colectia this.users cu elementele colectiei obtinute prin deserializare
+            var temp = xmlser.Deserialize(file) as GameConfigContext;
+            myUsers = temp;
             file.Dispose();
         }
     }

@@ -31,12 +31,18 @@
                 Width="120" TextChanged="Savegame_TextChanged"/>
             </StackPanel>
                 <Button  x:Name="FilePicker" Content="Select Saved Game" Margin="0,0,0,0" Width="200" Click="FilePicker_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Button x:Name="Save" HorizontalAlignment="Left" Width="200" Click="Save_Click">Save game</Button>
                 <Button x:Name="Load" HorizontalAlignment="Left" Width="200" Click="Load_Click">Load game</Button>
         </StackPanel>
         <TextBlock Text="Previously won games:"/>
         <TextBlock Text="{Binding Won}"/>
-        <StackPanel Margin="10,0,0,0">
-            <TextBlock>User statistics go here</TextBlock>
+        <StackPanel Margin="100,0,0,0" x:Name="UserField">
+            <StackPanel.DataContext>
+                <local:UserSelect/>
+            </StackPanel.DataContext>
+            <TextBlock Text="{Binding CurrentUser.UserStats.WonGames}"/>
+            <TextBlock Text="{Binding CurrentUser.UserStats.PlayedGames}"/>
+            <TextBlock Text="{Binding CurrentUser.UserStats.WinRate}"/>
         </StackPanel>
     </StackPanel>
 </Window>
