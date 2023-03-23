@@ -38,6 +38,7 @@ namespace WPF_Memory
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+
     }
     [Serializable]
     public class User : INotifyPropertyChanged
